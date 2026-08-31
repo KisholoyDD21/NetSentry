@@ -13,6 +13,16 @@ asyncio, raw sockets via Scapy, SQLite), applied security engineering
 (rule-based intrusion detection), and a polished desktop UI.
 
 ![Dashboard](screenshots/dashboard.png)
+# 🛡️ NetSentry
+
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License](https://img.shields.io/github/license/KisholoyDD21/NetSentry)
+![Stars](https://img.shields.io/github/stars/KisholoyDD21/NetSentry?style=social)
+![Forks](https://img.shields.io/github/forks/KisholoyDD21/NetSentry?style=social)
+![Issues](https://img.shields.io/github/issues/KisholoyDD21/NetSentry)
+![Build](https://github.com/KisholoyDD21/NetSentry/actions/workflows/ci.yml/badge.svg)
+![Tests](https://img.shields.io/github/actions/workflow/status/KisholoyDD21/NetSentry/ci.yml?label=tests)
+
 
 ---
 
