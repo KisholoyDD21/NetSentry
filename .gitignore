@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+build/
+dist/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Data / runtime artifacts
+data/*.db
+data/*.db-journal
+logs/*.log
+reports/exports/*
+!reports/exports/.gitkeep
+
+# IDE
+.vscode/*
+!.vscode/settings.json.example
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Config overrides (keep default config.json tracked, ignore local overrides)
+config.local.json

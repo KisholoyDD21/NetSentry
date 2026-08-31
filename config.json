@@ -1,0 +1,57 @@
+{
+  "app": {
+    "name": "NetSentry",
+    "version": "1.0.0",
+    "theme": "dark",
+    "accent_color": "blue",
+    "refresh_interval_ms": 1500
+  },
+  "database": {
+    "path": "data/netsentry.db"
+  },
+  "logging": {
+    "path": "logs/netsentry.log",
+    "level": "INFO"
+  },
+  "packet_capture": {
+    "enabled_by_default": false,
+    "interface": null,
+    "bpf_filter": "",
+    "max_packets_in_memory": 5000
+  },
+  "threat_detection": {
+    "port_scan": {
+      "distinct_ports_threshold": 15,
+      "window_seconds": 20
+    },
+    "excessive_connections": {
+      "connection_threshold": 60,
+      "window_seconds": 30
+    },
+    "brute_force": {
+      "target_ports": [21, 22, 23, 3389, 445, 3306, 5432],
+      "attempt_threshold": 8,
+      "window_seconds": 60
+    },
+    "dns_anomaly": {
+      "query_rate_threshold": 40,
+      "window_seconds": 30,
+      "min_entropy_for_dga": 3.8,
+      "suspicious_tlds": ["xyz", "top", "gq", "tk", "ml", "cf", "zip", "mov"]
+    },
+    "traffic_spike": {
+      "baseline_window_seconds": 60,
+      "spike_multiplier": 3.0,
+      "min_baseline_pps": 5
+    }
+  },
+  "ip_intelligence": {
+    "geo_api": "http://ip-api.com/json/{ip}?fields=status,message,country,countryCode,regionName,city,isp,org,as,query",
+    "abuseipdb_api_key": "",
+    "cache_ttl_seconds": 3600,
+    "request_timeout_seconds": 5
+  },
+  "reports": {
+    "export_dir": "reports/exports"
+  }
+}
